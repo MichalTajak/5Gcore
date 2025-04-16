@@ -52,12 +52,12 @@ Evaluated on a multi-class classification problem with four classes:
   <img src="results/GAN_GB.png" alt="Confusion Matrix for PFCP Classifier" width="500">
 </p>
 
-Overall, high classification accuracy and low misclassification rates.
+Overall, high classification accuracy and low misclassification rates. 
 Based on the confusion matrix:
-Normal traffic (class 0) was correctly classified 93% of the time.
-Deletion attacks (class 1) were correctly classified in 91% of cases.
-Modification attacks (class 2) achieved 98% accuracy.
-Establishment attacks (class 3) also achieved 98% accuracy.
+* Normal traffic (class 0) was correctly classified 93% of the time.
+* Deletion attacks (class 1) were correctly classified in 91% of cases.
+* Modification attacks (class 2) achieved 98% accuracy.
+* Establishment attacks (class 3) also achieved 98% accuracy.
 Very low cross-class confusion, indicating a robust model.
 
 ### TCP and UDP Model:
