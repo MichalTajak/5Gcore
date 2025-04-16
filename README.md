@@ -57,7 +57,7 @@ Based on the confusion matrix:
 * Normal traffic (class 0) was correctly classified 93% of the time.
 * Deletion attacks (class 1) were correctly classified in 91% of cases.
 * Modification attacks (class 2) achieved 98% accuracy.
-* Establishment attacks (class 3) also achieved 98% accuracy.
+* Establishment attacks (class 3) also achieved 98% accuracy. </br>
 Very low cross-class confusion, indicating a robust model.
 
 ### TCP and UDP Model:
