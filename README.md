@@ -53,15 +53,36 @@ Evaluated on a multi-class classification problem with four classes:
 </p>
 
 Overall, high classification accuracy and low misclassification rates. 
+
 Based on the confusion matrix:
 * Normal traffic (class 0) was correctly classified 93% of the time.
 * Deletion attacks (class 1) were correctly classified in 91% of cases.
 * Modification attacks (class 2) achieved 98% accuracy.
-* Establishment attacks (class 3) also achieved 98% accuracy. </br>
+* Establishment attacks (class 3) also achieved 98% accuracy.
+  
 Very low cross-class confusion, indicating a robust model.
 
 ### TCP and UDP Model:
+Focuses on analysing network flow behaviour over TCP and UDP protocols. Trained on time-windowed features extracted from flow metadata (e.g., packet count, byte count, duration).Evaluated on a multi-class classification problem with 8 classes:
+
+0 - benign, 11 - dos, 12 - portscan, 13 - botnet, 14 - infiltration, 15 - web attack, 16 - brute force, 17 - heartbleed.
+
+Performance:
 
 <p align="center">
   <img src="results/RF_GB_TCPIP.png" alt="Confusion Matrix for UDP TCP Classifier" width="700">
 </p>
+
+Overall, the model demonstrates strong classification performance across most attack types.
+
+* Benign traffic (class 0): 100% correctly classified.
+* DoS attacks (class 11): 100% accuracy.
+* Portscans (class 12): 97% accuracy with minimal confusion.
+* Botnets (class 13): 97% accuracy; a small amount of misclassification as benign.
+* Infiltration (class 14): 90% accuracy; slight confusion with portscan.
+* Web attacks (class 15): 98% accuracy.
+* Brute force (class 16): 99% accuracy.
+* Heartbleed (class 17): 100% correctly classified.
+
+Very low inter-class confusion highlights the model's robustness in distinguishing nuanced attack behaviours.
+
